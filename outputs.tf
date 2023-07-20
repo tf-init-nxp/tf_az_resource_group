@@ -1,7 +1,7 @@
-output "az-rg-name" {
-  value = azurerm_resource_group.az-rg.name
+output "rg_name" {
+  value = azurerm_resource_group.resource_group.name
 }
 
-output "az-rg-location" {
-  value = azurerm_resource_group.az-rg.location
+output "rg_location" {
+  value = azurerm_resource_group.resource_group.location
 }

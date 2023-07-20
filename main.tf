@@ -1,13 +1,13 @@
 locals {
   default_tags = {}
-  all_tags     = merge(local.default_tags, var.az_tags)
+  all_tags     = merge(local.default_tags, var.rg_tags)
 }
 
 # Resource Group
 
-resource "azurerm_resource_group" "az-rg" {
-  name     = var.az_rg_name
-  location = var.az_rg_location
+resource "azurerm_resource_group" "resource_group" {
+  name     = var.rg_name
+  location = var.rg_location
 
   tags = local.all_tags
 }
