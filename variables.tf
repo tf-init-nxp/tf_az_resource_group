@@ -8,6 +8,7 @@ variable "rg_name" {
 variable "rg_location" {
   description = "The Azure Region where the Resource Group should exist. Changing this forces a new Resource Group to be created."
   type        = string
+  default     = "westeurope"
 }
 
 variable "rg_tags" {
